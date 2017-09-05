@@ -7,15 +7,22 @@
     <title>For healthcare professionals</title>
 
     <link rel="stylesheet" href="stylesheets/css/main.css">
+    <!-- normalize -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
-    <script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script>
+    <!-- jquery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- polyfills -->
+    <script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script>
+    <!-- client side auto prefixing -->
     <script src="./prefixfree.min.js"></script>
+    <!-- main javascript -->
     <script src="./main.js"></script>
   </head>
   <body>
     <div class="app-container">
+      <!-- top header -->
       <header id="nav-header">
+        <!-- utility nav top -->
         <nav class="utility-nav__top">
           <div><a href='#' >Prescribing <br /> Information</a></div>
           <div><a href='#' >Prescribing <br /> Information</a></div>
@@ -23,10 +30,14 @@
           <div><a class="center-vertically" href='#' >Indication <br />&nbsp;</a></div>
           <div class="active" ><a href='#' >For Healthcare <br /> Professionals</a></div>
         </nav>
+
+        <!-- utility nav bottom -->
         <div class="utility-nav__bottom">
           <div class="logo__container float-left">
             <img src="./logo.png" alt="Logo">
           </div>
+
+          <!-- hamburger menu -->
           <div class="menu__container float-right">
             <a href="#" class="menu" data-toggle="mobile-menu">
               <div class="menu__link">
@@ -42,19 +53,29 @@
           </div>
         </div>
       </header>
+
+      <!-- logo and text for desktop view between headers -->
       <div class="logo-lg__container">
         <div class="logo-lg"></div>
         <p>This site is for U.S. residents only.</p>
       </div>
+
+      <!-- desktop header -->
       <header class="desktop-header">
         <div><span class="icon"><i class="home"></i></span></div>
         <div>Learn about PRODUCT</div>
         <div>What caused your fracture?</div>
         <div>Find Resources and tools</div>
       </header>
+
+      <!-- hero -->
       <section class="hero">
+
         <div class="hero__background">
+
+          <!-- mobile menu content -->
           <div class="mobile-menu hidden">
+              <!-- option 1 -->
               <div class="mobile-menu-heading">
                 <a data-toggle="collapse" href="#collapse1">
                   <p>
@@ -65,6 +86,7 @@
                   </span>
                 </a>
               </div>
+              <!-- option 1 sub-menu -->
               <div id="collapse1" class="mobile-menu-body">
                 <div class="mobile-menu-item">
                   <a data-toggle="collapse" href="#collapse2">
@@ -95,6 +117,7 @@
                   </a>
                 </div>
               </div>
+              <!-- option 2 -->
               <div class="mobile-menu-heading">
                 <a data-toggle="collapse" href="#collapse3">
                   <p>
@@ -105,6 +128,7 @@
                   </span>
                 </a>
               </div>
+              <!-- option 3 -->
               <div class="mobile-menu-heading">
                 <a data-toggle="collapse" href="#collapse4">
                   <p>
@@ -115,6 +139,7 @@
                   </span>
                 </a>
               </div>
+              <!-- option 4 -->
               <div class="mobile-menu-heading">
                 <a data-toggle="collapse" href="#collapse5">
                   <p>
@@ -126,6 +151,8 @@
                 </a>
               </div>
           </div>
+
+          <!-- hero headline for desktop -->
           <div class="hero-headline__desktop">
             <p>
               <small>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</small>
@@ -138,11 +165,15 @@
             </h1>
           </div>
         </div>
+
+        <!-- hero headline for mobile -->
         <div class="hero-headline__mobile">
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
           <h1>Nisi lacus sed viverra <br> tellus in. <hr><br> egestas magna ac placerat LORUM.</h1>
         </div>
       </section>
+
+      <!-- main copy -->
       <section class="copy adjust-pos-up-100">
         <div class="content-container">
           <p>
@@ -153,8 +184,12 @@
           </p>
         </div>
       </section>
+
+      <!-- callouts -->
       <section class="callouts">
         <div class="content-container">
+
+          <!-- callout 1 -->
           <div class="callout danger">
             <div class="callout-content">
               <div class="callout-content__left">
@@ -171,6 +206,7 @@
             </div>
           </div>
 
+          <!-- callout 2 -->
           <div class="callout info">
             <div class="callout-content">
               <div class="callout-content__left">
@@ -187,6 +223,7 @@
             </div>
           </div>
 
+          <!-- callout 3 -->
           <div class="callout warning">
             <div class="callout-content">
               <div class="callout-content__left">
@@ -204,6 +241,8 @@
           </div>
         </div>
       </section>
+
+      <!-- safety info copy -->
       <section class="copy-lower">
         <div class="content-container">
           <div class="safety-copy">
@@ -220,12 +259,20 @@
           </div>
         </div>
       </section>
+
+      <!-- footer -->
       <footer class="app-footer">
+
+        <!-- footer logo for desktop -->
         <div class="app-footer-logo__container">
           <h1 class="app-footer-logo__desktop"></h1>
         </div>
+
         <div class="content-container">
+          <!-- footer logo for mobile -->
           <h1 class="app-footer-logo__mobile">LORUM</h1>
+
+          <!-- footer links -->
           <ul>
             <li><a href="#">Privacy Statement</a></li>
             <li><a href="#">Terms of Use</a></li>
@@ -233,6 +280,8 @@
             <li><a href="#">Contact Us</a></li>
             <li><a class="ad-link" href="#"><img src="./adchoices.png" alt="ad choices" style="max-width:100%;" /></a></li>
           </ul>
+
+          <!-- copyright -->
           <div class="app-footer-copyright__container">
             <p class="app-footer-copyright">
               <small>
