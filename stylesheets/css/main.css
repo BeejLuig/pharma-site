@@ -1,51 +1,519 @@
-/*
-Error: Invalid CSS after "url(": expected ")", was ""https://fonts...."
-        on line 1 of sass/main.sass
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,700|Ubuntu:300,400,500,70");
+* {
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+  width: 100%; }
 
-1: @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,700|Ubuntu:300,400,500,700)
-2: 
-3: $color-primary: #3c5467
-4: $color-secondary: #758691
-5: $color-tertiary: #425563
-6: $color-quaternary: #768692
+a {
+  color: #3c5467;
+  text-decoration: none; }
 
-Backtrace:
-sass/main.sass:1
-/Users/benjamincantlupe/.rvm/gems/ruby-2.3.0/gems/sass-3.5.1/lib/sass/scss/parser.rb:1278:in `expected'
-/Users/benjamincantlupe/.rvm/gems/ruby-2.3.0/gems/sass-3.5.1/lib/sass/script/lexer.rb:231:in `expected!'
-/Users/benjamincantlupe/.rvm/gems/ruby-2.3.0/gems/sass-3.5.1/lib/sass/script/parser.rb:730:in `assert_tok'
-/Users/benjamincantlupe/.rvm/gems/ruby-2.3.0/gems/sass-3.5.1/lib/sass/script/parser.rb:520:in `funcall'
-/Users/benjamincantlupe/.rvm/gems/ruby-2.3.0/gems/sass-3.5.1/lib/sass/script/parser.rb:721:in `assert_expr'
-/Users/benjamincantlupe/.rvm/gems/ruby-2.3.0/gems/sass-3.5.1/lib/sass/script/parser.rb:211:in `parse_string'
-/Users/benjamincantlupe/.rvm/gems/ruby-2.3.0/gems/sass-3.5.1/lib/sass/engine.rb:1048:in `parse_import_arg'
-/Users/benjamincantlupe/.rvm/gems/ruby-2.3.0/gems/sass-3.5.1/lib/sass/engine.rb:1024:in `block in parse_import_directive'
-/Users/benjamincantlupe/.rvm/gems/ruby-2.3.0/gems/sass-3.5.1/lib/sass/engine.rb:1023:in `loop'
-/Users/benjamincantlupe/.rvm/gems/ruby-2.3.0/gems/sass-3.5.1/lib/sass/engine.rb:1023:in `parse_import_directive'
-/Users/benjamincantlupe/.rvm/gems/ruby-2.3.0/gems/sass-3.5.1/lib/sass/engine.rb:838:in `parse_directive'
-/Users/benjamincantlupe/.rvm/gems/ruby-2.3.0/gems/sass-3.5.1/lib/sass/engine.rb:655:in `parse_line'
-/Users/benjamincantlupe/.rvm/gems/ruby-2.3.0/gems/sass-3.5.1/lib/sass/engine.rb:540:in `build_tree'
-/Users/benjamincantlupe/.rvm/gems/ruby-2.3.0/gems/sass-3.5.1/lib/sass/engine.rb:559:in `block in append_children'
-/Users/benjamincantlupe/.rvm/gems/ruby-2.3.0/gems/sass-3.5.1/lib/sass/engine.rb:558:in `each'
-/Users/benjamincantlupe/.rvm/gems/ruby-2.3.0/gems/sass-3.5.1/lib/sass/engine.rb:558:in `append_children'
-/Users/benjamincantlupe/.rvm/gems/ruby-2.3.0/gems/sass-3.5.1/lib/sass/engine.rb:417:in `_to_tree'
-/Users/benjamincantlupe/.rvm/gems/ruby-2.3.0/gems/sass-3.5.1/lib/sass/engine.rb:389:in `_render_with_sourcemap'
-/Users/benjamincantlupe/.rvm/gems/ruby-2.3.0/gems/sass-3.5.1/lib/sass/engine.rb:307:in `render_with_sourcemap'
-/Users/benjamincantlupe/.rvm/gems/ruby-2.3.0/gems/sass-3.5.1/lib/sass/plugin/compiler.rb:462:in `update_stylesheet'
-/Users/benjamincantlupe/.rvm/gems/ruby-2.3.0/gems/sass-3.5.1/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-/Users/benjamincantlupe/.rvm/gems/ruby-2.3.0/gems/sass-3.5.1/lib/sass/plugin/compiler.rb:209:in `each'
-/Users/benjamincantlupe/.rvm/gems/ruby-2.3.0/gems/sass-3.5.1/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-/Users/benjamincantlupe/.rvm/gems/ruby-2.3.0/gems/sass-3.5.1/lib/sass/plugin/compiler.rb:443:in `on_file_changed'
-/Users/benjamincantlupe/.rvm/gems/ruby-2.3.0/gems/sass-3.5.1/lib/sass/plugin/compiler.rb:320:in `block in watch'
-/Users/benjamincantlupe/.rvm/gems/ruby-2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/event/config.rb:23:in `call'
-/Users/benjamincantlupe/.rvm/gems/ruby-2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:115:in `_process_changes'
-/Users/benjamincantlupe/.rvm/gems/ruby-2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:19:in `block in loop_for'
-/Users/benjamincantlupe/.rvm/gems/ruby-2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop'
-/Users/benjamincantlupe/.rvm/gems/ruby-2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop_for'
-/Users/benjamincantlupe/.rvm/gems/ruby-2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:84:in `_wait_for_changes'
-/Users/benjamincantlupe/.rvm/gems/ruby-2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:42:in `block in setup'
-/Users/benjamincantlupe/.rvm/gems/ruby-2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/internals/thread_pool.rb:6:in `block in add'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Invalid CSS after \"url(\": expected \")\", was \"\"https://fonts....\"\A         on line 1 of sass/main.sass\A \A 1: @import url(\"https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,700|Ubuntu:300,400,500,700)\A 2: \A 3: $color-primary: #3c5467\A 4: $color-secondary: #758691\A 5: $color-tertiary: #425563\A 6: $color-quaternary: #768692"; }
+.ad-link {
+  display: block;
+  padding: 4px;
+  padding-left: 0;
+  width: 100px; }
+
+.adjust-pos-up-100 {
+  margin-top: -100px; }
+
+.app-container {
+  background-color: white; }
+  @media all and (min-width: 500px) {
+    .app-container {
+      max-width: 500px;
+      margin: 0 auto; } }
+  @media all and (min-width: 1000px) {
+    .app-container {
+      max-width: 1000px;
+      margin: 0 auto; } }
+
+.app-footer {
+  background-color: #425563;
+  margin-top: 3em;
+  padding-top: 0.3em;
+  padding-bottom: 5em; }
+  .app-footer h1, .app-footer h2, .app-footer h3, .app-footer h4, .app-footer a, .app-footer p, .app-footer small, .app-footer ul {
+    color: white; }
+  .app-footer h1 {
+    margin: 20px auto; }
+  .app-footer p {
+    line-height: 0.8em;
+    margin: 0; }
+  .app-footer small {
+    font-size: 0.7em;
+    font-weight: lighter;
+    line-height: 0.5em; }
+  .app-footer ul {
+    font-size: 0.8em;
+    font-weight: 200;
+    list-style-type: none;
+    margin: 0;
+    margin-bottom: 40px;
+    padding: 0; }
+  @media all and (min-width: 1000px) {
+    .app-footer {
+      padding-top: 5em; }
+      .app-footer ul {
+        margin-bottom: 20px; }
+        .app-footer ul li {
+          display: inline-block;
+          font-size: 0.8em;
+          width: auto; }
+          .app-footer ul li:not(:last-child)::after {
+            content: " | "; }
+          .app-footer ul li a {
+            padding: 0 1em; }
+          .app-footer ul li .ad-link {
+            position: relative;
+            top: 4px;
+            width: 110px; } }
+
+@media all and (min-width: 1000px) {
+  .app-footer .content-container {
+    margin: 0 auto;
+    margin-right: 140px;
+    width: 60%; } }
+
+@media all and (min-width: 1000px) {
+  .app-footer-copyright {
+    display: inline;
+    font-size: 0.8em; } }
+
+.app-footer-copyright__container {
+  padding-left: 0.5em; }
+
+.app-footer-logo__container {
+  margin: 0 auto;
+  position: absolute;
+  text-align: left;
+  margin-top: -5em;
+  width: 1000px; }
+
+h1.app-footer-logo__desktop {
+  background-image: url("./footer-logo.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: none;
+  height: 90px;
+  margin-left: 4em;
+  width: 90px; }
+  @media all and (min-width: 1000px) {
+    h1.app-footer-logo__desktop {
+      display: block; } }
+
+.app-footer-logo__mobile {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: bold; }
+  @media all and (min-width: 1000px) {
+    .app-footer-logo__mobile {
+      display: none; } }
+
+body {
+  background-color: rgba(0, 0, 0, 0.1);
+  height: 100vh;
+  margin: 0;
+  padding: 0; }
+
+.center-vertically {
+  padding-top: 8px;
+  padding-bottom: 0;
+  height: 25px; }
+
+.content-container {
+  color: #8a8783;
+  font-size: 1.3em;
+  margin: 0 auto; }
+  @media all and (min-width: 320px) {
+    .content-container {
+      width: calc(100% - 20px); } }
+  @media all and (min-width: 1000px) {
+    .content-container {
+      width: 900px; } }
+
+.copy h1, .copy h2, .copy h3, .copy h4, .copy-lower h1, .copy-lower h2, .copy-lower h3, .copy-lower h4 {
+  color: #768692;
+  font-weight: 400; }
+
+.desktop-header {
+  background: #768692;
+  display: none;
+  margin-bottom: -60px;
+  margin-top: 100px;
+  padding: 0 100px; }
+  .desktop-header div {
+    border-left: 1px solid white;
+    color: white;
+    font-weight: 200;
+    height: 100%;
+    margin: 0;
+    padding: 22px 0;
+    text-align: center; }
+    .desktop-header div:first-child {
+      background-color: #425563;
+      padding: 20px 0; }
+      .desktop-header div:first-child .icon {
+        width: 50%;
+        margin: 0 auto;
+        text-align: center; }
+    .desktop-header div:last-child {
+      border-right: 1px solid white; }
+  @media all and (min-width: 1000px) {
+    .desktop-header {
+      display: grid;
+      grid-template-columns: 72px 276px 276px 276px;
+      padding: 0 50px;
+      width: 1000px; } }
+
+.float-left {
+  float: left; }
+
+.float-right {
+  float: right; }
+
+.hamburger {
+  display: inline-block;
+  text-align: center;
+  width: 34px; }
+  .hamburger span {
+    background-color: #758691;
+    border-radius: 2px;
+    display: block;
+    height: 6px;
+    margin: 4px auto;
+    width: 34px; }
+
+.hero {
+  margin: 0 auto;
+  max-width: 500px; }
+  @media all and (min-width: 1000px) {
+    .hero {
+      max-width: 1000px;
+      margin: 0 auto; } }
+
+.hero__background {
+  background-color: transparent;
+  background-image: url("/assets/background.png");
+  background-position: right -63px bottom 76px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 350px;
+  width: 100%;
+  z-index: 2; }
+  @media all and (min-width: 1000px) {
+    .hero__background {
+      height: 570px; } }
+
+.hero-headline__mobile hr, .hero-headline__desktop hr {
+  background-color: #ff9800;
+  border: none;
+  float: left;
+  height: 3px;
+  margin-right: 50%;
+  width: 50%; }
+.hero-headline__mobile h1, .hero-headline__mobile p, .hero-headline__desktop h1, .hero-headline__desktop p {
+  color: #425563; }
+.hero-headline__mobile p, .hero-headline__desktop p {
+  font-size: 0.88em;
+  margin-bottom: 0; }
+.hero-headline__mobile h1, .hero-headline__desktop h1 {
+  font-size: 2em;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  line-height: 1.2em;
+  margin-top: 0.4em; }
+
+.hero-headline__mobile {
+  max-width: calc(100% - 20px);
+  margin: 0 auto;
+  transform: translateY(-110px); }
+  @media all and (min-width: 1000px) {
+    .hero-headline__mobile {
+      display: none; } }
+
+.hero-headline__desktop {
+  display: none;
+  left: 50px;
+  position: relative;
+  top: 8em;
+  width: 38%; }
+  .hero-headline__desktop h1, .hero-headline__desktop p {
+    color: white; }
+  .hero-headline__desktop p {
+    margin-bottom: 1em; }
+  .hero-headline__desktop h1 {
+    margin-top: 1.5em; }
+  @media all and (min-width: 1000px) {
+    .hero-headline__desktop {
+      display: block; } }
+
+.hidden {
+  display: none; }
+
+.home {
+  background-image: url("/assets/home.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: block;
+  height: 25px;
+  margin: 0 auto;
+  width: 25px; }
+
+.larger {
+  font-size: 1.3em; }
+
+.logo__container {
+  padding-left: 10%;
+  padding-top: 20px; }
+  .logo__container img {
+    max-width: 82px; }
+
+.logo__container, .menu__container {
+  width: 50%; }
+
+.logo-lg {
+  background-image: url("/assets/logo-lg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  float: left;
+  height: 68px;
+  max-width: 160px; }
+
+.logo-lg__container {
+  display: none;
+  margin: 0 auto;
+  padding-left: 80px;
+  padding-right: 100px;
+  position: absolute;
+  text-align: right;
+  top: 30px;
+  width: 1000px; }
+  .logo-lg__container p {
+    color: #555555;
+    float: right;
+    font-size: 0.85em;
+    position: relative;
+    top: 30px;
+    width: 50%; }
+  @media all and (min-width: 1000px) {
+    .logo-lg__container {
+      display: block; } }
+
+.menu {
+  display: block;
+  float: right;
+  height: 51px;
+  text-align: right;
+  width: fit-content; }
+
+.close {
+  background-image: url("/assets/close.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: none;
+  height: 34px;
+  width: 34px; }
+  .close.show {
+    display: inline-block; }
+
+.menu__container {
+  padding-right: 5%;
+  padding-top: 26px; }
+
+.menu__link {
+  color: #758691;
+  display: inline-block;
+  font-size: 1.2em;
+  margin-right: 12px;
+  transform: translateY(-9px);
+  text-align: center;
+  width: 50px; }
+
+#nav-header {
+  margin: 0 auto;
+  max-width: 500px; }
+  @media all and (min-width: 320px) {
+    #nav-header {
+      width: 100vw; } }
+  @media all and (min-width: 500px) {
+    #nav-header {
+      margin: 0 auto;
+      width: 500px; } }
+  @media all and (min-width: 1000px) {
+    #nav-header {
+      margin-right: 10%;
+      width: 600px; } }
+
+@media all and (min-width: 1000px) {
+  .safety-copy {
+    font-size: 0.7em; }
+    .safety-copy h1 {
+      font-weight: 500; } }
+
+span.highlight {
+  color: #ff9800; }
+
+.utility-nav__bottom {
+  height: 65px; }
+  @media all and (min-width: 1000px) {
+    .utility-nav__bottom {
+      display: none; } }
+
+.utility-nav__top {
+  background-color: #d1cdbc;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); }
+  @media all and (min-width: 1000px) {
+    .utility-nav__top {
+      border-bottom-left-radius: 8px;
+      border-bottom-right-radius: 8px;
+      grid-template-columns: repeat(5, 1fr); } }
+  .utility-nav__top div a {
+    display: block;
+    font-size: 0.7em;
+    margin: 4px 0;
+    text-align: center; }
+    .utility-nav__top div a:first-child {
+      display: none; }
+      @media all and (min-width: 1000px) {
+        .utility-nav__top div a:first-child {
+          display: block;
+          border-bottom-left-radius: 8px; } }
+    @media all and (min-width: 1000px) {
+      .utility-nav__top div a:last-child {
+        border-bottom-right-radius: 8px; } }
+    .utility-nav__top div a:not(:nth-of-type(4)) a {
+      border-right: 1px solid #3c5467; }
+    .utility-nav__top div a.active {
+      background-color: #3c5467; }
+      .utility-nav__top div a.active a {
+        color: white; }
+
+.callout {
+  border-radius: 7px;
+  font-size: 1.05em;
+  font-weight: lighter;
+  max-width: 400px;
+  height: 220px;
+  padding: 10px;
+  margin: 20px auto; }
+  @media all and (min-width: 1000px) {
+    .callout {
+      display: inline-block;
+      height: 185px;
+      width: 296px; }
+      .callout p, .callout p.larger {
+        font-size: 1em;
+        margin-top: 10px; } }
+
+.callout-content {
+  height: 72%; }
+
+.callout-footer {
+  height: 28%;
+  margin: 0; }
+  .callout-footer a {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid white;
+    border-radius: 7px;
+    color: white;
+    display: block;
+    font-size: 1em;
+    font-weight: lighter;
+    line-height: 2em;
+    margin: 0 auto;
+    text-align: center;
+    text-decoration: none;
+    width: 95%; }
+
+.callout-content {
+  color: white;
+  margin: 0 auto;
+  width: 95%; }
+  .callout-content p {
+    margin-bottom: 0;
+    padding-right: 10px; }
+  .callout-content__left {
+    float: left;
+    width: 70%; }
+  .callout-content__right {
+    float: right;
+    width: 30%; }
+
+.callout-image {
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 13px;
+  height: 80px;
+  width: 80px;
+  margin: 0 auto;
+  margin-right: 0;
+  margin-top: 10px; }
+
+.danger {
+  background-color: #d86018; }
+
+.warning {
+  background-color: #ff9800; }
+
+.info {
+  background-color: #768692; }
+
+.arrow-right {
+  background-image: url("/assets/arrow-right.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+  height: 17px;
+  width: 17px; }
+
+span.icon {
+  vertical-align: middle; }
+
+.mobile-menu {
+  padding-top: 0.9em;
+  position: absolute;
+  max-width: 500px;
+  z-index: 999; }
+  .mobile-menu p {
+    display: inline-block;
+    font-size: 1.2em;
+    margin: 0;
+    width: 90%; }
+  .mobile-menu .mobile-menu-heading {
+    margin: 0;
+    padding: 0;
+    background-color: #768692;
+    border-bottom: 2px solid white;
+    padding: 1em; }
+    .mobile-menu .mobile-menu-heading a {
+      color: white; }
+    .mobile-menu .mobile-menu-heading:last-child {
+      background-color: #d1ccbd; }
+      .mobile-menu .mobile-menu-heading:last-child a {
+        color: #3c5467; }
+  .mobile-menu .mobile-menu-heading.active {
+    background-color: #425563;
+    border-bottom: none; }
+    .mobile-menu .mobile-menu-heading.active p {
+      color: white; }
+    .mobile-menu .mobile-menu-heading.active span.icon i {
+      transform: rotate(-90deg); }
+
+.mobile-menu-body {
+  display: none; }
+
+.mobile-menu-item {
+  margin: 0;
+  padding: 0;
+  background-color: #d9d9d6;
+  border-bottom: 1px solid #3c5467;
+  padding: 1em; }
+  .mobile-menu-item a {
+    color: #3c5467; }
+
+/*# sourceMappingURL=main.css.map */
