@@ -80,8 +80,9 @@ a {
     display: inline;
     font-size: 0.8em; } }
 
-.app-footer-copyright__container {
-  padding-left: 0.5em; }
+@media all and (min-width: 1000px) {
+  .app-footer-copyright__container {
+    padding-left: 0.5em; } }
 
 .app-footer-logo__container {
   margin: 0 auto;
