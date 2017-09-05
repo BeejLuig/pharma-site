@@ -91,7 +91,7 @@ a {
   width: 1000px; }
 
 h1.app-footer-logo__desktop {
-  background-image: url("./footer-logo.png");
+  background-image: url("../../footer-logo.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
