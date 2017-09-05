@@ -21,6 +21,3 @@
 
 **Copy**  
 - Between the mobile and desktop views, the copy was slightly different. Of note, the copy inside of the callouts wasn't quite the same, and some copy in the desktop view was orange. I chose not to alter copy content based on window size. 
-
-**File Structure**  
-- The most up-to-date code for this project lives in the `gh-pages` branch on [github](https://github.com/BeejLuig/pharma-site/tree/gh-pages). The file structure was originally organized in folders (as can be seen in the [master branch](https://github.com/BeejLuig/pharma-site)), but I moved some files into the root directory because of issues with how GitHub pages handles relative links for project sites. With a little more time I would have re-organized the file structure. 
